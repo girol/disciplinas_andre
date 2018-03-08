@@ -1,5 +1,7 @@
 <html>
 
+<a href="/disciplinas/create">Cadastrar disciplina</a>
+
     <body>
     <h1> Xurepschool </h1> 
 
