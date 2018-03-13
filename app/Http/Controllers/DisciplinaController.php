@@ -66,7 +66,7 @@ class DisciplinaController extends Controller
      */
     public function edit(Disciplina $disciplina)
     {
-        //
+        return view('disciplinas.edit', compact('disciplina'));
     }
 
     /**
@@ -78,7 +78,13 @@ class DisciplinaController extends Controller
      */
     public function update(Request $request, Disciplina $disciplina)
     {
-        //
+        $disciplina->titulo = $request->titulo;
+        $disciplina->ementa = $request->ementa;
+
+        $disciplina->save();
+
+        return redirect('/');
+
     }
 
     /**
