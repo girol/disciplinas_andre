@@ -1,6 +1,7 @@
-<html>
+@extends('master')
 
-<a href="/disciplinas/create">Cadastrar disciplina</a>
+@section('content')
+<a class='btn btn-md btn-success' href="/disciplinas/create">Cadastrar disciplina</a>
 
     <body>
     <h1> Xurepschool </h1> 
@@ -11,4 +12,5 @@
     @endforeach
     </ul>
     </body>
-</html>
+
+@endsection

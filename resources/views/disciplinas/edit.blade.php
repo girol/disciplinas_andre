@@ -1,3 +1,7 @@
+@extends('master')
+
+@section('content')
+
 <form method="POST" action="/disciplinas/{{ $disciplina->id }}">
 {{ csrf_field() }}
 {{ method_field('patch') }}
@@ -9,3 +13,5 @@ Ementa: <textarea name="ementa">
 <br><br>
 <button type="submit"> Salvar </button>
 </form>
+
+@endsection
