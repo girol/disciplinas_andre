@@ -1,7 +1,11 @@
 @extends('master')
 
 @section('content')
-<a class='btn btn-md btn-success' href="/disciplinas/create">Cadastrar disciplina</a>
+
+@auth
+
+    <a class='btn btn-md btn-success' href="/disciplinas/create">Cadastrar disciplina</a>
+@endauth
 
     <body>
     <h1> Xurepschool </h1> 

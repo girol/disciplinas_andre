@@ -47,6 +47,19 @@
 
     <!-- Begin page content -->
     <main role="main" class="container">
+
+        @auth
+          <form action="/logout" method="post">
+            {{ csrf_field() }}
+            <button class="btn btn-danger" type="submit">Logout</button>
+          </form>
+
+        
+        @else        
+          <a class="btn btn-primary" href="/login">Login</a>
+          <a class="btn btn-success" href="/register">Registrar</a>
+        
+        @endauth
         @yield('content')
     </main>
 
