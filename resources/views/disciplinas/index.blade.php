@@ -5,9 +5,10 @@
     <body>
     <h1> Xurepschool </h1> 
 
+    <ul>
     @foreach ( $disciplinas as $disc) 
-        {{ $disc->titulo }}
-        <hr>
+       <li><a href="/disciplinas/{{$disc->id}}"> {{ $disc->titulo }}</a></li>
     @endforeach
+    </ul>
     </body>
 </html>
